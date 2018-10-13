@@ -22,7 +22,7 @@ class GameJudge {
             black_count++;
             break;
           case STONE.WHITE:
-            white_count++;
+              white_count++;
             break;
         }
       }
@@ -47,6 +47,41 @@ class GameJudge {
 
 
 class PutCellJudge {
-  constructor(){
-  }
+  constructor(){}
+  // 
+  // judge(stone_color, cells, target_x, target_y) {
+  //   let enemy_color = (STONE.WHITE == stone_color) ? STONE.BLACK : STONE.WHITE;      
+  // 
+  //   for(let amount_y = -1; amount_y <= 1; amount_y++) {
+  //     for (let amount_x = -1; amount_x <= 1; amount_x++) {
+  //       let target_cell_y = target_y + amount_y;
+  //       let target_cell_x = target_x + amount_x;
+  // 
+  //       console.log(`${target_cell_y} ${target_cell_x}`);
+  // 
+  // 
+  //       while (!(amount_x == 0 && amount_y == 0) &&
+  //                 target_cell_y >= 0 &&
+  //                 cells.length > target_cell_y &&
+  //                 target_cell_x >= 0 &&
+  //                 cells[target_cell_y].length > target_cell_x &&
+  //                 enemy_color == cells[target_cell_y][target_cell_x]) {
+  //         target_cell_y += amount_y;
+  //         target_cell_x += amount_x;
+  //       }
+  // 
+  //       if (!(amount_x == 0 && amount_y == 0) &&
+  //                 target_cell_y >= 0 &&
+  //                 cells.length > target_cell_y &&
+  //                 target_cell_x >= 0 &&
+  //                 cells[target_cell_y].length > target_cell_x &&
+  //                 enemy_color != cells[target_cell_y][target_cell_x]) {
+  //         // console.log(`${target_cell_x} ${target_cell_y}`);
+  //       }
+  // 
+  //     }          
+  //   }
+  // }
+  // 
+  
 }
