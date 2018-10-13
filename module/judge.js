@@ -1,0 +1,10 @@
+
+class Judge {
+  constructor(){
+  }
+  
+  
+  
+  
+  
+}

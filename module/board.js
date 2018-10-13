@@ -4,11 +4,22 @@
 */
 class Board{
   constructor(){
+    this.initialize();
+    this.board = document.getElementById("board");
+  }
+  
+  initialize(){
     this.cells = new Array(8);
     for(let y = 0; y < 8; y++){
       this.cells[y] = new Array(8).fill(STONE.NONE);
     }
-    this.board = document.getElementById("board");
+    this.cells[4][3] = STONE.BLACK;
+    this.cells[3][4] = STONE.BLACK;
+    
+    this.cells[3][3] = STONE.WHITE;
+    this.cells[4][4] = STONE.WHITE;
+    
+    
   }
   
   /**
