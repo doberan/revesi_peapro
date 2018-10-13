@@ -6,7 +6,7 @@ class Board{
   constructor(){
     this.cells = new Array(8);
     for(let y = 0; y < 8; y++){
-      this.cells[y] = new Array(8).fill(0);
+      this.cells[y] = new Array(8).fill(STONE.NONE);
     }
     this.board = document.getElementById("board");
   }
@@ -21,13 +21,13 @@ class Board{
       for(var cell_x = 0; cell_x < 8; cell_x++){
         let cell = document.createElement("td", "");
         switch(this.cells[cell_y][cell_x]){
-          case 0:
+          case STONE.NONE:
             cell.innerHTML = " ";
             break;
-          case 1:
+          case STONE.BLACK:
             cell.innerHTML = "●";
             break;
-          case 2:
+          case STONE.WHITE:
             cell.innerHTML = "○";
             break;
         }
